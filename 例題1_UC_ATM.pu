@@ -1,0 +1,14 @@
+@startuml 例題1
+' 何も入れないと上から下になるため、下のコードで左からにする
+left to right direction
+actor 利用者 #AA0000;line:Pink;line.bold;
+package ATM {
+    ' できる限り体言止めではなく～するという形にする
+usecase 預金する
+usecase 預金を引き出す
+usecase 残高照会する
+usecase 通帳記入する
+}
+利用者 --> 預金する
+利用者 --> 預金を引き出す
+@enduml
