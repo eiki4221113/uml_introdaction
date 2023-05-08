@@ -1,0 +1,8 @@
+@startuml
+abstract class 従業員
+
+従業員 <|-- 派遣従業員
+従業員 <|-- 契約社員
+従業員 <|-- 正社員
+
+@enduml
