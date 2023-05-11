@@ -10,7 +10,7 @@
                 activate cooker
         customer -> floar : ラーメンを注文する
 
-        floar -> cooker : 調理を支持する
+        floar -> cooker : 調理を指示する
 
             cooker -> cooker : 調理をする
 
