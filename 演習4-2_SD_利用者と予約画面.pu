@@ -1,0 +1,16 @@
+@startuml
+hide footbox
+
+participant "user:利用者" as user
+participant ":予約画面" as reservation
+
+activate user
+    user -> reservation: ログイン（非同期）
+    activate reservation
+    reservation -> reservation: 操作確認（認証）
+        activate reservation
+    deactivate user
+        deactivate reservation
+
+
+@enduml
