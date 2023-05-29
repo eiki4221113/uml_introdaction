@@ -1,0 +1,35 @@
+@startuml カレーライス
+title カレーライスの作り方
+start
+:材料を買う;
+fork
+:材料を切る;
+note right
+注釈
+玉ねぎはみじん切りにする
+end note
+fork
+:玉ねぎを炒める;
+note right
+注釈
+あめ色になるまで炒める
+end note
+:ほかの野菜を炒める;
+note right
+注釈
+火が通りずらいものから炒める
+end note
+:肉を炒める;
+:水を入れて煮込む;
+:ルーを入れて溶かし煮込む;
+note right
+注釈
+10分程度煮込む
+end note
+fork again
+:米を炊く;
+end fork
+:<color:Orange>カレーライス]
+:カレーライスを食べる;
+stop
+@enduml
