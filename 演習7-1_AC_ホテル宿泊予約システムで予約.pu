@@ -10,6 +10,7 @@ start
        :パスワードを入力する;
     repeat while (認証成功) -> [失敗]
 
+
 :予約;
 stop
 @enduml
