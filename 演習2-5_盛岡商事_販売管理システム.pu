@@ -1,9 +1,13 @@
 @startuml ユースケース図
 left to right direction
+actor 商品確認係
+actor 出荷状況登録係
 rectangle 販売管理システム{
-usecase 注文商品の確認 
-usecase 商品出荷状況の登録 
+  usecase 注文商品の確認 
+  usecase 商品出荷状況の登録 
 }
-販売部 <.. 注文商品の確認 : <<include>>
-販売部 <.. 商品出荷状況の登録 :<<include>>
+
+商品確認係 -- 注文商品の確認
+出荷状況登録係 -- 商品出荷状況の登録
+注文商品の確認 <.. 商品出荷状況の登録 : <<include>>
 @enduml
